@@ -24,6 +24,13 @@ $routes->get('/logout', 'Auth::logout');
 
 // Dashboard
 $routes->get('/dashboard', 'DashboardController::index');
+// $routes->get('/dashboard/Categories', 'CategoriesController::index');
+$routes->get('/dashboard/categories', 'CategoriesController::index');
+$routes->get('/dashboard/categories/list', 'CategoriesController::list');
+$routes->get('/dashboard/categories/get/(:num)', 'CategoriesController::get/$1');
+$routes->post('/dashboard/categories/store', 'CategoriesController::store');
+$routes->post('/dashboard/categories/update', 'CategoriesController::update');
+$routes->post('/dashboard/categories/delete/(:num)', 'CategoriesController::delete/$1');
 
 // Items CRUD
 $routes->get('/items', 'ItemsController::index');           // List
