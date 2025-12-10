@@ -89,7 +89,7 @@
 
                         <!-- Categories Section -->
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="<?= base_url('dashboard/categories') ?>">
                                 <i class="bi bi-collection"></i> Categories
                             </a>
                         </li>
