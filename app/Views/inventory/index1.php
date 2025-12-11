@@ -48,7 +48,7 @@
 
                                 <a href="<?= base_url('inventory/delete/'.$item['id']); ?>" 
                                    class="btn btn-danger btn-sm"
-                                   onclick="return confirm('Are you sure you want to delete this item?')">
+                                   onclick="return confirm ('Are you sure you want to delete this item?')">
                                     Delete
                                 </a>
                             </td>
