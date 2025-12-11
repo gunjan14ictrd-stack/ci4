@@ -43,3 +43,8 @@ $routes->get('/items/delete/(:num)', 'ItemsController::delete/$1'); // Delete
 
 //inventory
 $routes->get('/inventory','inventorycontroller::index');
+$routes->get('/inventory/create', 'inventorycontroller::create');
+$routes->POST('/inventory/store','inventorycontroller::store');
+$routes->get('/inventory/edit/(:num)','inventorycontroller::edit/$1');
+$routes->POSt('/inventory/update/(:num)','inventorycontroller::update/$1');
+$routes->get('/inventory/delete/(:num)', 'inventorycontroller::delete/$1');
