@@ -2,6 +2,14 @@
 
 <?= $this->section('content') ?>
 
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Items List</h1>
+    <div class="btn-toolbar mb-2 mb-md-0">
+        <a href="/inventory/create" class="btn btn-sm btn-primary">
+            <i class="bi bi-plus-circle"></i> Add New Item
+        </a>
+    </div>
+</div>
 
 <div class="container mt-4">
 
@@ -16,7 +24,7 @@
                 <table id="inventoryTable" class="table table-bordered table-striped">
                     <thead>
                         <tr>
-                            <th>ID</th>
+                            <!-- <th>ID</th> -->
                             <th>Product</th>
                             <th>Quantity</th>
                             <th>Price</th>
@@ -27,7 +35,7 @@
                     <tbody>
                     <?php foreach($inventory as $item): ?>
                         <tr>
-                            <td><?= $item['id']; ?></td>
+                           
                             <td><?= $item['product_name']; ?></td>
                             <td><?= $item['quantity']; ?></td>
                             <td><?= $item['price']; ?></td>
