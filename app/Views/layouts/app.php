@@ -75,7 +75,7 @@
                         </li>
 
                        <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link   <?= (url_is('items*') ? 'active' : '') ?>" href="/inventory">
                                 <i class="bi bi-boxes"></i> Inventory
                             </a>
                         </li>
